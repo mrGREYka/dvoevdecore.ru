@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="about">
 	<div class="container">
 		<div class="about-top">
-			<h1>About</h1>
+			<h1>О нас</h1>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
 		</div>
 		<div class="about-row">

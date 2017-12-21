@@ -15,12 +15,12 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 		<div class="about-row">
 			<div class="col-md-6 about-row1">
-				<a href="#"><img class="img-responsive " src="images/ab.jpg" alt=""></a>
+				<a href="#"><img class="img-responsive " src="/images/ab.jpg" alt=""></a>
 				<h6>Contrary to popular</h6>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised word. Richard McClintock.</p>
 			</div>
 			<div class="col-md-6  about-row1">
-				<a href="#"><img class="img-responsive " src="images/ab1.jpg" alt=""></a>
+				<a href="#"><img class="img-responsive " src="/images/ab1.jpg" alt=""></a>
 				<h6>Contrary to popular</h6>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised word. Richard McClintock.</p>
 			</div>		
@@ -56,7 +56,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 		<div class="our">
 			<div class="col-md-5 our-in">
-				<a href="#"><img class=" img-responsive" src="images/ab2.jpg" alt="">  </a>
+				<a href="#"><img class=" img-responsive" src="/images/ab2.jpg" alt="">  </a>
 			</div>
 			<div class="col-md-7 in-our">
 				<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</h5>

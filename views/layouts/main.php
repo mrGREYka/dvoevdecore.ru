@@ -34,7 +34,7 @@ AppAsset::register($this);
         <div class="header-top">
             <div class="container">
                 <div class="logo">
-                    <a href="/"><img src="images/logo.png" alt="" /></a>
+                    <a href="/"><img src="/images/logo.png" alt="" /></a>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -65,7 +65,7 @@ AppAsset::register($this);
                             <ul class="slides">
                                 <li>
                                     <div class="col-md-8 banner-left">
-                                        <img  class="img-responsive" src="images/banner.jpg" alt="">
+                                        <img  class="img-responsive" src="/images/banner.jpg" alt="">
                                     </div>
                                     <div class="col-md-4 banner-right">
                                         <h3>Lorem Ipsum is simply dummy text </h3>
@@ -75,7 +75,7 @@ AppAsset::register($this);
                                 </li>
                                 <li>
                                     <div class="col-md-8 banner-left">
-                                        <img class="img-responsive" src="images/banner1.jpg" alt="">
+                                        <img class="img-responsive" src="/images/banner1.jpg" alt="">
                                     </div>
                                     <div class="col-md-4 banner-right">
                                         <h3>Lorem Ipsum is simply dummy text </h3>
@@ -85,7 +85,7 @@ AppAsset::register($this);
                                 </li>
                                 <li>
                                     <div class="col-md-8 banner-left">
-                                        <img class="img-responsive" src="images/banner2.jpg" alt="">
+                                        <img class="img-responsive" src="/images/banner2.jpg" alt="">
                                     </div>
                                     <div class="col-md-4 banner-right">
                                         <h3>Lorem Ipsum is simply dummy text </h3>

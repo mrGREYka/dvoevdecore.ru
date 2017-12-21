@@ -14,7 +14,7 @@ $this->title = 'Двое в декоре';
         </div>
         <div class="about-us">
             <div class="col-md-6 grids">
-                <img class="img-responsive" src="images/we.jpg" alt="">
+                <img class="img-responsive" src="/images/we.jpg" alt="">
             </div>
             <div class="col-md-6 grids1">
                 <h5>It is a long established fact that a reader will be distracted by the readable content of a page.</h5>
@@ -63,7 +63,7 @@ $this->title = 'Двое в декоре';
             <div class="service-bottom">
                 <div class="col-md-6 service-grid-top">
                     <div class="col-md-2 service-grid1">
-                        <img  src="images/se.png" alt="">
+                        <img  src="/images/se.png" alt="">
                     </div>
                     <div class="col-md-10 service-grid">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
@@ -72,7 +72,7 @@ $this->title = 'Двое в декоре';
                 </div>
                 <div class="col-md-6 service-grid-top">
                     <div class="col-md-2 service-grid1">
-                        <img  src="images/se1.png" alt="">
+                        <img  src="/images/se1.png" alt="">
                     </div>
                     <div class="col-md-10 service-grid">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
@@ -84,7 +84,7 @@ $this->title = 'Двое в декоре';
             <div class="service-bottom">
                 <div class="col-md-6 service-grid-top">
                     <div class="col-md-2 service-grid1">
-                        <img  src="images/se2.png" alt="">
+                        <img  src="/images/se2.png" alt="">
                     </div>
                     <div class="col-md-10 service-grid">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
@@ -93,7 +93,7 @@ $this->title = 'Двое в декоре';
                 </div>
                 <div class="col-md-6 service-grid-top">
                     <div class="col-md-2 service-grid1">
-                        <img  src="images/se3.png" alt="">
+                        <img  src="/images/se3.png" alt="">
                     </div>
                     <div class="col-md-10 service-grid">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>

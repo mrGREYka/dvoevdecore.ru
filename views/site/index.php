@@ -9,7 +9,7 @@ $this->title = 'Двое в декоре';
     <div class="content-top-at">
     <div class="container">
         <div class="content-top">
-            <h1>Welcome</h1>
+            <h1>Welcome friends</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
         </div>
         <div class="about-us">

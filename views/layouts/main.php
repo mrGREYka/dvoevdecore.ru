@@ -355,7 +355,7 @@ AppAsset::register($this);
       -->
     <div class="home-one-slider">
         <div class="slider-active-home-one owl-carousel">
-            <div class="single-slide" style="background-image:url(assets/images/slider/1.jpg)">
+            <div class="single-slide" style="background-image:url(/images/slider/1.jpg)">
                 <div class="slider-table">
                     <div class="slider-cell">
                         <div class="container">
@@ -374,7 +374,7 @@ AppAsset::register($this);
                 </div>
             </div>
             <!-- end single slider -->
-            <div class="single-slide" style="background-image:url(assets/images/slider/2.jpg)">
+            <div class="single-slide" style="background-image:url(/images/slider/2.jpg)">
                 <div class="slider-table">
                     <div class="slider-cell">
                         <div class="container">
@@ -393,7 +393,7 @@ AppAsset::register($this);
                 </div>
             </div>
             <!-- end single slider -->
-            <div class="single-slide" style="background-image:url(assets/images/slider/3.jpg)">
+            <div class="single-slide" style="background-image:url(/images/slider/3.jpg)">
                 <div class="slider-table">
                     <div class="slider-cell">
                         <div class="container">

@@ -284,8 +284,9 @@ AppAsset::register($this);
     
     <div class="container">
         <?= Alert::widget() ?>
-        <?= $content ?>
     </div>
+
+    <?= $content ?>
 
 
  <footer class="step-main-footer">

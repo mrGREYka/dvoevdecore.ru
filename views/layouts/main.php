@@ -102,13 +102,17 @@ AppAsset::register($this);
                             </a>
                         </div>
                         <div class="main-menu">
-                            <ul>
-                                <li class="active"><a href="#">О нас</a></li>
-                                <li><a href="#">Наши услуги</a></li>
-                                <li><a href="#">Портфолио</a></li>
-                                <li><a href="#">Отзывы</a></li>
-                                <li><a href="#">Контакты</a></li>
-                            </ul>
+                            <?php
+                                echo Nav::widget([
+                                    'items' => [
+                                        ['label' => 'О нас', 'url' => ['/site/about']],
+                                        ['label' => 'Наши услуги', 'url' => ['/site/service']],
+                                        ['label' => 'Портфолио', 'url' => ['/site/portfolio']],
+                                        ['label' => 'Отзывы', 'url' => ['/site/comment']],
+                                        ['label' => 'Контакты', 'url' => ['/site/contact']],
+                                    ],
+                                ]);
+                            ?>
                         </div>
 
                     </div>
@@ -140,64 +144,17 @@ AppAsset::register($this);
             <a href="#"> <i class="fa fa-close"></i></a>
         </div>
         <div class="mobile-main-menu">
-            <ul>
-                <li class="has-child-3"><a href="#" class="waves-effect waves-light2">home</a>
-                    <ul class="sub-menu-3">
-                        <li><a href="index.html" class="waves-effect waves-light3">home 1</a></li>
-                        <li><a href="index-home2.html" class="waves-effect waves-light3">home 2</a></li>
-                        <li><a href="index-home-3.html" class="waves-effect waves-light3">home 3</a></li>
-                    </ul>
-                </li>
-                <li class="has-child-3"><a href="#" class="waves-effect waves-light2">about us</a>
-                    <ul class="sub-menu-3">
-                        <Li><a href="about-one.html" class="waves-effect waves-light3">about 1</a></Li>
-                        <Li><a href="about-two.html" class="waves-effect waves-light3">about 2</a></Li>
-                    </ul>
-                </li>
-                <li class="has-child-3"><a href="#" class="waves-effect waves-light2">portfolio</a>
-                    <ul class="sub-menu-3">
-                        <li><a href="portfolio_1.html" class="waves-effect waves-light3">portfolio 1</a></li>
-                        <li><a href="portfolio_2.html" class="waves-effect waves-light3">portfolio 2</a></li>
-                        <li><a href="portfolio_3.html" class="waves-effect waves-light3">portfolio 3</a></li>
-                        <li><a href="portfolio_4.html" class="waves-effect waves-light3">portfolio 4</a></li>
-                        <li><a href="portfolio_05.html" class="waves-effect waves-light3">portfolio 5</a></li>
-                    </ul>
-                </li>
-                <li class="has-child-3"><a href="#" class="waves-effect waves-light2">Services</a>
-                    <ul class="sub-menu-3">
-                        <li><a href="services-one.html" class="waves-effect waves-light3">Services 1</a></li>
-                        <li><a href="services-two.html" class="waves-effect waves-light3">Services 2</a></li>
-                        <li><a href="services-elements.html" class="waves-effect waves-light3">all services</a></li>
-                    </ul>
-                </li>
-                <li class="has-child-3"><a href="#" class="waves-effect waves-light2">blog</a>
-                    <ul class="sub-menu-3">
-                        <li><a href="blog-grid.html" class="waves-effect waves-light3">Blog Grid</a></li>
-                        <li><a href="blog-leftsidebar.html" class="waves-effect waves-light3">Blog left Sidebar</a></li>
-                        <li><a href="blog-right-sidebar.html" class="waves-effect waves-light3">Blog right Sidebar</a></li>
-                        <li><a href="single-blog-full-width.html" class="waves-effect waves-light3">single full width</a></li>
-                        <li><a href="single-blog-left-sidebar.html" class="waves-effect waves-light3">single left sidebar</a></li>
-                        <li><a href="single-blog.html" class="waves-effect waves-light3">single Right sidebar</a></li>
-                    </ul>
-                </li>
-                <li class="has-child-3"><a href="#" class="waves-effect waves-light2">pages</a>
-                    <ul class="sub-menu-3">
-                        <li> <a href="main-shop.html" class="waves-effect waves-light3">Shop page <span class="label label-success">new</span></a></li>
-                        <li><a href="shop-list.html" class="waves-effect waves-light3">shop list view <span class="label label-success">new</span></a></li>
-                        <li><a href="shop-grid.html" class="waves-effect waves-light3">shop grid view <span class="label label-success">new</span></a></li>
-                        <li><a href="shop-details.html" class="waves-effect waves-light3">shop details <span class="label label-success">new</span></a></li>
-                        <li><a href="shopping-cart.html" class="waves-effect waves-light3">cart <span class="label label-success">new</span></a></li>
-                        <li><a href="checkout.html" class="waves-effect waves-light3">checkout <span class="label label-success">new</span></a></li>
-                        <li><a href="my-account.html" class="waves-effect waves-light3">account <span class="label label-success">new</span></a></li>
-                        <li><a href="comming-soon.html">Comming Soon <span class="label label-success">EX</span></a></li>
-                        <li><a href="events.html">Event <span class="label label-success">EX</span></a></li>
-                        <li><a href="single-events.html">Event details <span class="label label-success">EX</span></a></li>
-                        <li><a href="404.html">404 <span class="label label-success">EX</span></a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html" class="waves-effect waves-light2">contact</a>
-                </li>
-            </ul>
+            <?php
+                echo Nav::widget([
+                    'items' => [
+                        ['label' => 'О нас', 'url' => ['/site/about']],
+                        ['label' => 'Наши услуги', 'url' => ['/site/service']],
+                        ['label' => 'Портфолио', 'url' => ['/site/portfolio']],
+                        ['label' => 'Отзывы', 'url' => ['/site/comment']],
+                        ['label' => 'Контакты', 'url' => ['/site/contact']],
+                    ],
+                ]);
+            ?>
         </div>
     </div>
     <div class="mobile-menu-overlay hidden-sm hidden-md hidden-lg"></div>
@@ -313,15 +270,23 @@ AppAsset::register($this);
         </div>
         <!-- slider active -->
     </div>
-    
-
     <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="breadcump-text text-center">
+                    <?= Breadcrumbs::widget([
+                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                    ]) ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
+
 
  <footer class="step-main-footer">
         <div class="footer-top">

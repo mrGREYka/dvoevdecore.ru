@@ -51,8 +51,8 @@ class AppAsset extends AssetBundle
         'js/jquery.countdown.min.js',
         'js/slider-range.js',
         'js/main.js',
-        //'https://maps.googleapis.com/maps/api/js?key=AIzaSyBb96UnKVrepU3PsMlWaJKvFXifGvRqngA',
-        //'js/map.js',
+        'https://maps.googleapis.com/maps/api/js?key=AIzaSyBb96UnKVrepU3PsMlWaJKvFXifGvRqngA',
+        'js/map.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

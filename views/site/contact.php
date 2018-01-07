@@ -133,10 +133,6 @@ MAP AREA END FORM HERE
 
         <?php else: ?>
 
-            <p>
-                Воспользуйтесь формой обратной связи.
-            </p>
-
             <div class="row">
                 <div class="col-lg-5">
 
@@ -145,8 +141,6 @@ MAP AREA END FORM HERE
                         <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
 
                         <?= $form->field($model, 'email') ?>
-
-                        <?= $form->field($model, 'subject') ?>
 
                         <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
 

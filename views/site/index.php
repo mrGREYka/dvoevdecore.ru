@@ -218,7 +218,7 @@ GET IN TOUCH TWO AREA START FORM HERE
                             ], 
                         ]); ?>
 
-                            <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'placeholder' => 'Ваше имя']) ?>
+                            <?= $form->field($model, 'name')->textInput(['placeholder' => 'Ваше имя']) ?>
 
                             <?= $form->field($model, 'email')->textInput(['placeholder' => 'Email']) ?>
 

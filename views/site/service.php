@@ -18,7 +18,7 @@ STEP OUR SERVICES START FORM HERE
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title text-center">
-                        <h2 class="main-section-heading">Our <span class="sec-bar">Servic</span>es</h2>
+                        <h2 class="main-section-heading">Наши услуги</h2>
                         <div class="middle-con">
                             <p>The release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>

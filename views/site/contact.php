@@ -123,7 +123,7 @@ MAP AREA END FORM HERE
 <div class="container">
     <div class="big-spacer2"></div> <!-- end big spacer -->
     <div class="site-contact">
-        <h1><?= Html::encode($this->title) ?></h1>
+        <h2><?= Html::encode($this->title) ?></h2>
 
         <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 

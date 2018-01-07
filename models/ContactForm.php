@@ -50,7 +50,7 @@ class ContactForm extends Model
     public function contact($email)
     {
         if ($this->validate()) {
-            Yii::$app->mailer->compose( 'layouts\homelink' )
+            Yii::$app->mailer->compose( 'layouts/homelink' )
                 ->setTo($email)
                 ->setFrom(['mail@dvoevdecore.ru' => $this->name])
                 ->setSubject('обращение с сайта dvoevdecore.ru')

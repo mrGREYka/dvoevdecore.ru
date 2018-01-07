@@ -271,22 +271,11 @@ AppAsset::register($this);
         <!-- slider active -->
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="breadcump-text text-center">
-                    <?= Breadcrumbs::widget([
-                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-                    ]) ?>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container">
         <?= Alert::widget() ?>
+        <?= $content ?>
     </div>
 
-    <?= $content ?>
+
 
 
  <footer class="step-main-footer">

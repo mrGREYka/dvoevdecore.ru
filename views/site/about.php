@@ -7,63 +7,112 @@ use yii\helpers\Html;
 $this->title = 'О нас';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="about">
-	<div class="container">
-		<div class="about-top">
-			<h1>О нас</h1>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-		</div>
-		<div class="about-row">
-			<div class="col-md-6 about-row1">
-				<a href="#"><img class="img-responsive " src="/images/ab.jpg" alt=""></a>
-				<h6>Contrary to popular</h6>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised word. Richard McClintock.</p>
-			</div>
-			<div class="col-md-6  about-row1">
-				<a href="#"><img class="img-responsive " src="/images/ab1.jpg" alt=""></a>
-				<h6>Contrary to popular</h6>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised word. Richard McClintock.</p>
-			</div>		
-			<div class="clearfix"> </div>	
-		</div>
-		<div class="simply-grid">
-			<h2>Our Advantages</h2>
-			<div class="our-ad">
-				<div class="col-md-4 so-left">
-					
-					<ul class="simply-left">
-						<li><a href="#"><i> </i>  Ipsum is simply dummy</a></li>
-						<li><a href="#"><i> </i>There are many variations</a></li>
-						<li><a href="#"><i> </i>when an unknown printer took</a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 so-left">
-					<ul class="simply-left">
-						<li><a href="#"><i> </i> There are many variations</a></li>
-						<li><a href="#"><i> </i>   Ipsum is simply dummy</a></li>
-						<li><a href="#"><i> </i> when an unknown printer took</a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 so-left">
-					<ul class="simply-left">
-						<li><a href="#"><i> </i> when an unknown printer took</a></li>
-						<li><a href="#"><i> </i>  Ipsum is simply dummy</a></li>
-						<li><a href="#"><i> </i> There are many variations</a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="our">
-			<div class="col-md-5 our-in">
-				<a href="#"><img class=" img-responsive" src="/images/ab2.jpg" alt="">  </a>
-			</div>
-			<div class="col-md-7 in-our">
-				<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</h5>
-				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature
-					Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
+<!-- 
+========================================
+GET IN TOUCH TWO AREA START FORM HERE
+========================================
+-->
+    <div class="step-get-in-touch section-pading">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2 class="section-heading2">GE<span class="sec-bar-2">T IN TOU</span>CH</h2>
+                    </div>
+                </div>
+                <!-- end section title -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+                    <div class="contact-address">
+                            <div class="col-md-3 col-md-offset-2 col-sm-4 col-xs-12 mbt-30">
+                                <div class="single-contact-address">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <div class="con-i">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5>+088-555-222-44</h5>
+                                        <h5>+099-777-333-55</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            </div>
+                            <!-- end single contact address -->
+                            <div class="col-md-3 col-sm-4 col-xs-12 mbt-30">
+                                <div class="single-contact-address">
+                                <div class="media">
+                                    <div class="pull-left">
+                                       <div class="con-i">
+                                            <i class="fa fa-paper-plane"></i>
+                                       </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5><a href="mailto:iinfo@gmail.com">info@gmail.com</a></h5>
+                                        <h5><a href="mailto:www.yourweb.com">www.yourweb.com</a></h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            </div>
+                            <!-- end single contact address -->
+                            <div class="col-md-3 col-sm-4 col-xs-12">
+                               <div class="single-contact-address">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <div class="con-i">
+                                            <i class="fa fa-home"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5>212 , Inner circular road,</h5>
+                                        <h5>New York City, U.S.A.</h5>
+                                    </div>
+
+                                </div>
+                            </div> 
+                            </div>
+                            <!-- end single contact address -->
+                    </div>
+            </div> <!-- end row -->
+            <div class="big-spacer2"></div> <!-- end big spacer -->
+            <div class="row">
+               <form action="#" class="main-contact-form-contact">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="col-md-6">
+                    <textarea placeholder="Message"></textarea>
+                    <div class="text-right">
+                        <a href="#!" class="btn-mr waves-effect waves-light">SEND</a>
+                    </div>
+                </div>
+               </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+========================================
+GET IN TOUCH TWO AREA START FORM HERE
+========================================
+-->
+    <!-- 
+========================================
+MAP AREA START FORM HERE
+========================================
+-->
+   <div class="contact-page-map-area">
+       <div id="googleMap"></div>
+   </div>
+    <!-- 
+========================================
+MAP AREA END FORM HERE
+========================================
+-->

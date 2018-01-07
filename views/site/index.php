@@ -1,5 +1,8 @@
 <?php
 
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
+use yii\captcha\Captcha;
 /* @var $this yii\web\View */
 
 $this->title = 'Двое в декоре';
@@ -192,18 +195,49 @@ GET IN TOUCH TWO AREA START FORM HERE
                 <!-- end section title -->
             </div>
             <!-- end row -->
-            <div class="row">
-                <form action="#" class="main-contact-form-contact">
+            <div class="big-spacer2"></div> <!-- end big spacer -->
+            <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
+
+                <div class="alert alert-success">
+                    Спасибо за Ваше обращение. Мы свяжимся с Вами ближайшее время.
+                </div>
+
+            <?php else: ?>
+
+                <div class="row">
                     <div class="col-md-12">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="email" placeholder="Email">
-                        <textarea placeholder="Ваш вопрос"></textarea>
-                        <div class="text-right">
-                            <a href="#!" class="btn-mr waves-effect waves-light">Отправить</a>
-                        </div>
+
+                        <?php $form = ActiveForm::begin([
+                            'id' => 'contact-form',
+                            'options' => [
+                                'class' => 'main-contact-form-contact', 
+                            ],
+                            'fieldConfig' => [
+                                'template' => "{input}\n{error}",
+                                'labelOptions' => ['class' => 'wms'],
+                            ], 
+                        ]); ?>
+
+                            <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'placeholder' => 'Ваше имя']) ?>
+
+                            <?= $form->field($model, 'email')->textInput(['placeholder' => 'Email']) ?>
+
+                            <?= $form->field($model, 'body')->textarea(['rows' => 6, 'placeholder' => 'Сообщение']) ?>
+
+                            <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+                                'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-9">{input}</div></div>',
+                            ]) ?>
+
+                            <div class="form-group">
+                                <?= Html::submitButton('Отправить', ['class' => 'btn-mr waves-effect waves-light', 'name' => 'contact-button']) ?>
+                            </div>
+
+                        <?php ActiveForm::end(); ?>
+
                     </div>
-                </form>
-            </div>
+                </div>
+
+            <?php endif; ?>
         </div>
     </div>
 

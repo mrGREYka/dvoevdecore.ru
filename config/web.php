@@ -52,10 +52,11 @@ $config = [
             // for the mailer to send real emails.
             'useFileTransport' => false,
             'transport' => [
-            'host' => 'smtp.timeweb.ru',
-            'username' => 'mail@dvoevdecore.ru',
-            'password' => 'f4LhSPPB',
-            'port' => '25',
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.timeweb.ru',
+                'username' => 'mail@dvoevdecore.ru',
+                'password' => 'f4LhSPPB',
+                'port' => '25',
             ],
         ],
         'log' => [

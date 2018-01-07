@@ -9,155 +9,89 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
   <!-- 
 ========================================
-STEP TEAMONE AREA END FORM HERE
+STEP PORTFOLIO ONE AREA START FORM HERE
 ========================================
 -->
-    <div class="step-amazing-gallery section-pading">
+    <div class="stepportfilo-page-area section-pading">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center">
-                        <h2 class="main-section-heading">Наши работы</h2>
-                        <div class="middle-con">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod sint tempor incididunt ut labore et dolore magna aliqua. Excepteur occaecat cupidatat non proident.</p>
+                <div class="grid">
+                    <div class="col-sm-4 col-xs-12 grid-item cat-1 cat-4">
+                        <div class="single-port">
+                            <img src="/images/portfolio/port-3/pp1.jpg" alt="">
+                            <div class="port-hover">
+                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
+                                <h5>Branding Project</h5>
+                            </div>
+                            <!-- end hover project -->
                         </div>
                     </div>
+                    <!-- end single port -->
+                    <div class="col-sm-4 col-xs-12 grid-item cat-3 cat-2">
+                        <div class="single-port">
+                            <img src="/images/portfolio/port-3/pp2.jpg" alt="">
+                            <div class="port-hover">
+                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
+                                <h5>Branding Project</h5>
+                            </div>
+                            <!-- end hover project -->
+                        </div>
+                    </div>
+                    <!-- end single port -->
+                    <div class="col-sm-4 col-xs-12 grid-item cat-4 cat-1">
+                        <div class="single-port">
+                            <img src="/images/portfolio/port-3/pp3.jpg" alt="">
+                            <div class="port-hover">
+                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
+                                <h5>Branding Project</h5>
+                            </div>
+                            <!-- end hover project -->
+                        </div>
+                    </div>
+                    <!-- end single port -->
+                    <div class="col-sm-4 col-xs-12 grid-item cat-2 cat-4">
+
+                        <div class="single-port">
+                            <img src="/images/portfolio/port-3/pp4.jpg" alt="">
+                            <div class="port-hover">
+                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
+                                <h5>Branding Project</h5>
+                            </div>
+                            <!-- end hover project -->
+                        </div>
+                    </div>
+                    <!-- end single port -->
+                    <div class="col-sm-4 col-xs-12 grid-item cat-3 cat-4 cat-1">
+
+                        <div class="single-port">
+                            <img src="/images/portfolio/port-3/pp5.jpg" alt="">
+                            <div class="port-hover">
+                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
+                                <h5>Branding Project</h5>
+                            </div>
+                            <!-- end hover project -->
+                        </div>
+                    </div>
+                    <!-- end single port -->
+                    <div class="col-sm-4 col-xs-12 grid-item cat-2 cat-3">
+                        <div class="single-port">
+                            <img src="/images/portfolio/port-3/pp6.jpg" alt="">
+                            <div class="port-hover">
+                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
+                                <h5>Branding Project</h5>
+                            </div>
+                            <!-- end hover project -->
+                        </div>
+                    </div>
+                    <!-- end single port -->
                 </div>
-                <!-- end section title -->
             </div>
-        </div>
-        <!-- end container -->
-        <div class="step-gallery">
-            <ul>
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl1.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl1.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl2.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl2.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl3.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl3.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl4.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl4.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl5.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl5.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl6.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl6.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl7.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl7.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl8.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl8.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl9.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl9.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl10.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl10.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl11.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl11.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-                <li class="single-gallery-step">
-                    <img src="/images/gallery/gl12.jpg" alt="">
-                    <div class="gallery-view">
-                        <a class="img-poppu" href="/images/gallery/gl12.jpg">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <!-- end single gallery -->
-            </ul>
-        </div>
-        <!-- end gallery  -->
-        <div class="big-spacer"></div>
-        <!-- end bigspacer -->
-        <div class="load-more text-center">
-            <a href="#!" class="btn-mr waves-effect waves-light">Показать еще</a>
+            <!-- end row -->
         </div>
     </div>
 
     <!-- 
 ========================================
-STEP TEAMONE AREA END FORM HERE
+STEP PORTFOLIO ONE AREA END FORM HERE
 ========================================
 -->

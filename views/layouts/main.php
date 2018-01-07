@@ -30,7 +30,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<!-- 
+    <!-- 
     ========================================
     STEP PRELOADER
     ========================================
@@ -52,6 +52,7 @@ AppAsset::register($this);
     STEP PRELOADER
     ========================================
       -->
+
     <!-- 
     ========================================
     STEP HEADER AREA START FORM HERE
@@ -117,13 +118,6 @@ AppAsset::register($this);
 
                     </div>
                     <!-- end main menu -->
-                    <div class="col-md-1 col-sm-1 col-xs-4">
-                        <div class="search-area">
-                            <a href="#" class="click-serach-step">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -134,6 +128,7 @@ AppAsset::register($this);
     STEP HEADER AREA START FORM HERE
     ========================================
       -->
+
     <!-- 
     ========================================
     MOBILE OFFCANVAS MENU
@@ -163,45 +158,6 @@ AppAsset::register($this);
     MOBILE OFFCANVAS MENU
     ========================================
       -->
-
-    <!-- 
-    ========================================
-    HIDDEN MODAL AREA
-    ========================================
-      -->
-
-    <div class="search-rapper-step">
-        <div class="search-close">
-            <a class="serc-clse" href="#">
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-        <div class="search-table">
-            <div class="search-cell">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="step-serach-main">
-                                <form action="#!">
-                                    <input type="text" placeholder="Serach...">
-                                    <button type="submit" class="waves-effect waves-light"> <i class="fa fa-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- 
-    ========================================
-    HIDDEN MODAL AREA
-    ========================================
-      -->
-
 
     <!-- 
     ========================================
@@ -270,15 +226,17 @@ AppAsset::register($this);
         </div>
         <!-- slider active -->
     </div>
-    <div class="container">
-        <?= Alert::widget() ?>
-        <?= $content ?>
-    </div>
+    
 
+    <?= Alert::widget() ?>
+    <?= $content ?>
 
-
-
- <footer class="step-main-footer">
+    <!-- 
+    ========================================
+    STEP FOOTER AREA START FORM HERE
+    ========================================
+    -->
+    <footer class="step-main-footer">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -401,6 +359,11 @@ AppAsset::register($this);
         </div>
         <!-- end footer bottom -->
     </footer>
+    <!-- 
+    ========================================
+    STEP FOOTER AREA END FORM HERE
+    ========================================
+    -->
 
 
 <?php $this->endBody() ?>

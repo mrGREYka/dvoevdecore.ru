@@ -5,128 +5,54 @@
 $this->title = 'Двое в декоре';
 ?>
 <!--content-->
-
- <!-- 
+<!-- 
 ========================================
-STEP PORTFOLIO START  FORM HERE
+TYPOGRAPHY STYLE
 ========================================
--->
-    <div class="step-portfolio-area section-pading">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center">
-                        <h2 class="main-section-heading">Наши проекты</h2>
+  -->
+<div class="elemnts-carosel section-pading2">
+    <div class="container">
+        <div class="big-spacer"></div>
+        <!-- end big spacer -->
+        <div class="row">
+            <h2 class="elemnt-heading mtb-30 text-center">Наши проекты</h2>
+            <div class="related-project-active owl-carousel">
+                <div class="col-md-4">
+                    <div class="single-related-project">
+                        <img src="/images/portfolio/project-detils/r1.jpg" alt="">
+                        <h3><a href="project_detials.html">UI Branding Design</a></h3>
                     </div>
                 </div>
-                <!-- end section title -->
-            </div>
-            <!-- end row -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="filter-menu">
-                        <ul class="filter-list text-center">
-                            <li data-filter="*" class="active btn-mr waves-effect waves-teal  white">All</li>
-                            <li data-filter=".cat-1" class="btn-mr waves-effect waves-teal  white">Design</li>
-                            <li data-filter=".cat-2" class="btn-mr waves-effect waves-teal  white">Web</li>
-                            <li data-filter=".cat-3" class="btn-mr waves-effect waves-teal  white">Indentity</li>
-                            <li data-filter=".cat-4" class="btn-mr waves-effect waves-teal  white">Interface</li>
-                        </ul>
+                <!-- single related project -->
+                <div class="col-md-4">
+                    <div class="single-related-project">
+                        <img src="/images/portfolio/project-detils/r2.jpg" alt="">
+                        <h3><a href="project_detials.html">Box UI Branding Design</a></h3>
                     </div>
                 </div>
-            </div>
-            <!-- end row -->
-            <div class="big-spacer2"></div>
-            <!-- end bigspacer -->
-            <div class="row">
-                <div class="grid">
-                    <div class="col-sm-4 col-xs-12 grid-item cat-1 cat-4">
-                        <div class="single-port">
-                            <img src="/images/portfolio/port-04/pp1.jpg" alt="">
-                            <div class="port-hover waves-effect waves-light-1">
-                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
-                                <h5>Branding Project</h5>
-                            </div>
-                            <!-- end hover project -->
-                        </div>
+                <!-- single related project -->
+                <div class="col-md-4">
+                    <div class="single-related-project">
+                        <img src="/images/portfolio/project-detils/r3.jpg" alt="">
+                        <h3><a href="project_detials.html">Global Branding Project</a></h3>
                     </div>
-                    <!-- end single port -->
-                    <div class="col-sm-4 col-xs-12 grid-item cat-2 cat-3 cat-4 cat-1">
-                        <div class="single-port">
-                            <img src="/images/portfolio/port-04/pp2.jpg" alt="">
-                            <div class="port-hover waves-effect waves-light-1">
-                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
-                                <h5>Branding Project</h5>
-                            </div>
-                            <!-- end hover project -->
-                        </div>
-                    </div>
-                    <!-- end single port -->
-                    <div class="col-sm-4 col-xs-12 grid-item cat-4 cat-3">
-                        <div class="single-port">
-                            <img src="/images/portfolio/port-04/pp3.jpg" alt="">
-                            <div class="port-hover waves-effect waves-light-1">
-                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
-                                <h5>Branding Project</h5>
-                            </div>
-                            <!-- end hover project -->
-                        </div>
-                    </div>
-                    <!-- end single port -->
-                    <div class="col-sm-4 col-xs-12 grid-item cat-4 cat-2">
-                        <div class="single-port">
-                            <img src="/images/portfolio/port-04/pp4.jpg" alt="">
-                            <div class="port-hover waves-effect waves-light-1">
-                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
-                                <h5>Branding Project</h5>
-                            </div>
-                            <!-- end hover project -->
-                        </div>
-                    </div>
-                    <!-- end single port -->
-                    <div class="col-sm-4 col-xs-12 grid-item cat-2 cat-3">
-                        <div class="single-port">
-                            <img src="/images/portfolio/port-04/pp5.jpg" alt="">
-                            <div class="port-hover waves-effect waves-light-1">
-                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
-                                <h5>Branding Project</h5>
-                            </div>
-                            <!-- end hover project -->
-                        </div>
-                    </div>
-                    <!-- end single port -->
-                    <div class="col-sm-4 col-xs-12 grid-item cat-1 cat-2 cat-3">
-                        <div class="single-port">
-                            <img src="/images/portfolio/port-04/pp6.jpg" alt="">
-                            <div class="port-hover waves-effect waves-light-1">
-                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
-                                <h5>Branding Project</h5>
-                            </div>
-                            <!-- end hover project -->
-                        </div>
-                    </div>
-                    <!-- end single port -->
-                    <div class="col-sm-4 col-xs-12 grid-item cat-3 cat-4 cat-2">
-                        <div class="single-port">
-                            <img src="/images/portfolio/port-04/pp7.jpg" alt="">
-                            <div class="port-hover waves-effect waves-light-1">
-                                <a href="project_detials.html"><i class="fa fa-search"></i></a>
-                                <h5>Branding Project</h5>
-                            </div>
-                            <!-- end hover project -->
-                        </div>
-                    </div>
-                    <!-- end single port -->
                 </div>
+                <!-- single related project -->
+                <div class="col-md-4">
+                    <div class="single-related-project">
+                        <img src="/images/portfolio/project-detils/r1.jpg" alt="">
+                        <h3><a href="project_detials.html">UI Branding Design</a></h3>
+                    </div>
+                </div>
+                <!-- single related project -->
             </div>
-            <!-- end row -->
+            <!-- end related project active -->
         </div>
+        <!-- end row -->
+        <div class="big-spacer"></div>
+        <!-- end big spacer -->
     </div>
-    <!-- 
-========================================
-STEP PORTFOLIO AREA END FORM HERE
-========================================
--->
+</div>
 
 <!-- 
 ========================================

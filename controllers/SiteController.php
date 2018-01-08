@@ -65,9 +65,8 @@ class SiteController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
             $adminEmail = Yii::$app->params['adminEmail'];
-            $adminEmail2 = Yii::$app->params['adminEmail2'];
             $htmlBody = $this->renderPartial( 'email', [ 'model' => $model, ] );
-            if ($model->contact($adminEmail, $htmlBody) && $model->contact($adminEmail2, $htmlBody)) {
+            if ($model->contact($adminEmail, $htmlBody)) {
                 Yii::$app->session->setFlash('contactFormSubmitted');
                 return $this->refresh();
             }    
@@ -120,9 +119,8 @@ class SiteController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
             $adminEmail = Yii::$app->params['adminEmail'];
-            $adminEmail2 = Yii::$app->params['adminEmail2'];
             $htmlBody = $this->renderPartial( 'email', [ 'model' => $model, ] );
-            if ($model->contact($adminEmail, $htmlBody) && $model->contact($adminEmail2, $htmlBody)) {
+            if ($model->contact($adminEmail, $htmlBody)) {
                 Yii::$app->session->setFlash('contactFormSubmitted');
                 return $this->refresh();
             }    

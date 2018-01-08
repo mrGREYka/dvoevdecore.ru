@@ -367,6 +367,9 @@ AppAsset::register($this);
 
 
 <?php $this->endBody() ?>
+<?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
+    <script>jQuery(document).on("ready", function () { alert( 'Ваше сообщение отправлено...' ); } );</script>    
+<?php endif; ?>                
 </body>
 </html>
 <?php $this->endPage() ?>

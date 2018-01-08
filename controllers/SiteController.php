@@ -62,10 +62,15 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
 
-            return $this->refresh();
+        if ($model->load(Yii::$app->request->post())) {
+            $adminEmail = Yii::$app->params['adminEmail'];
+            $adminEmail2 = Yii::$app->params['adminEmail2'];
+            $htmlBody = $this->renderPartial( 'email', [ 'model' => $model, ] );
+            if ($model->contact($adminEmail, $htmlBody) && $model->contact($adminEmail2, $htmlBody)) {
+                Yii::$app->session->setFlash('contactFormSubmitted');
+                return $this->refresh();
+            }    
         }
         return $this->render('index', [
             'model' => $model,
@@ -112,14 +117,18 @@ class SiteController extends Controller
     public function actionContact()
     {
         $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
 
-            return $this->refresh();
+        if ($model->load(Yii::$app->request->post())) {
+            $adminEmail = Yii::$app->params['adminEmail'];
+            $adminEmail2 = Yii::$app->params['adminEmail2'];
+            $htmlBody = $this->renderPartial( 'email', [ 'model' => $model, ] );
+            if ($model->contact($adminEmail, $htmlBody) && $model->contact($adminEmail2, $htmlBody)) {
+                Yii::$app->session->setFlash('contactFormSubmitted');
+                return $this->refresh();
+            }    
         }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
+
+        return $this->render('contact', [ 'model' => $model, ]);
     }
 
     /**

@@ -197,7 +197,6 @@ GET IN TOUCH TWO AREA START FORM HERE
             <!-- end row -->
             <div class="big-spacer2"></div> <!-- end big spacer -->
             <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
-
                 <div class="alert alert-success">
                     Спасибо за Ваше обращение. Мы свяжимся с Вами ближайшее время.
                 </div>
@@ -247,5 +246,7 @@ GET IN TOUCH TWO AREA START FORM HERE
 GET IN TOUCH TWO AREA START FORM HERE
 ========================================
 --> 
+
+
 
 

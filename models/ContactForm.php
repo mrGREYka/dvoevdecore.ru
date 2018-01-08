@@ -47,13 +47,14 @@ class ContactForm extends Model
      * @param string $email the target email address
      * @return bool whether the model passes validation
      */
-    public function contact($email)
+    public function contact($email, $body)
     {
         if ($this->validate()) {
-            Yii::$app->mailer->compose( 'layouts/homelink' )
+            Yii::$app->mailer->compose()
                 ->setTo($email)
                 ->setFrom(['mail@dvoevdecore.ru' => $this->name])
                 ->setSubject('обращение с сайта dvoevdecore.ru')
+                ->setHTMLBody($body)
                 ->send();
 
             return true;

@@ -84,7 +84,6 @@ GET IN TOUCH TWO AREA START FORM HERE
         </div> <!-- end row -->
         <div class="big-spacer2"></div> <!-- end big spacer -->
         <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
-
             <div class="alert alert-success">
                 Спасибо за Ваше обращение. Мы свяжимся с Вами ближайшее время.
             </div>
@@ -139,9 +138,12 @@ GET IN TOUCH TWO AREA START FORM HERE
 MAP AREA START FORM HERE
 ========================================
 -->
+   
    <div class="contact-page-map-area">
        <div id="googleMap"></div>
    </div>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb96UnKVrepU3PsMlWaJKvFXifGvRqngA"></script>
+   <script src="/js/map.js"></script>
     <!-- 
 ========================================
 MAP AREA END FORM HERE

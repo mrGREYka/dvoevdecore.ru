@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-use yii\widgets\linkPager;
+use yii\widgets\LinkPager;
 
 $this->title = 'Портфолио';
 $this->params['breadcrumbs'][] = $this->title;

@@ -23,28 +23,28 @@ TYPOGRAPHY STYLE
                 <div class="col-md-4">
                     <div class="single-related-project">
                         <img src="/images/portfolio/project-detils/r1.jpg" alt="">
-                        <h3><a href="project_detials.html">UI Branding Design</a></h3>
+                        <h3><a href="/site/project">UI Branding Design</a></h3>
                     </div>
                 </div>
                 <!-- single related project -->
                 <div class="col-md-4">
                     <div class="single-related-project">
                         <img src="/images/portfolio/project-detils/r2.jpg" alt="">
-                        <h3><a href="project_detials.html">Box UI Branding Design</a></h3>
+                        <h3><a href="/site/project">Box UI Branding Design</a></h3>
                     </div>
                 </div>
                 <!-- single related project -->
                 <div class="col-md-4">
                     <div class="single-related-project">
                         <img src="/images/portfolio/project-detils/r3.jpg" alt="">
-                        <h3><a href="project_detials.html">Global Branding Project</a></h3>
+                        <h3><a href="/site/project">Global Branding Project</a></h3>
                     </div>
                 </div>
                 <!-- single related project -->
                 <div class="col-md-4">
                     <div class="single-related-project">
                         <img src="/images/portfolio/project-detils/r1.jpg" alt="">
-                        <h3><a href="project_detials.html">UI Branding Design</a></h3>
+                        <h3><a href="/site/project">UI Branding Design</a></h3>
                     </div>
                 </div>
                 <!-- single related project -->

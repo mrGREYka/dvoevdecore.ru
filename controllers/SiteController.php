@@ -9,6 +9,8 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Project;
+use yii\data\Pagination;
 
 class SiteController extends Controller
 {
@@ -141,7 +143,22 @@ class SiteController extends Controller
 
     public function actionPortfolio()
     {
-        return $this->render('portfolio');
+        $query = Project::find();
+
+        $pagination = new Pagination([
+            'defaultPageSize' => 6,
+            'totalCount' => $query->count(),
+        ]);
+
+        $projects = $query->orderBy('id')
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+
+        return $this->render('portfolio', [
+            'projects' => $projects,
+            'pagination' => $pagination, 
+        ]);
     }
 
     public function actionService()
@@ -152,5 +169,10 @@ class SiteController extends Controller
     public function actionComment()
     {
         return $this->render('comment');
+    }
+
+    public function actionProject()
+    {
+        return $this->render('project');
     }
 }

@@ -9,8 +9,6 @@ use yii\widgets\LinkPager;
 $this->title = 'Портфолио';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<?= LinkPager::widget(['pagination' => $pagination]) ?>
-
 
   <!-- 
 ========================================

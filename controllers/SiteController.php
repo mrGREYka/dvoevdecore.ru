@@ -171,8 +171,8 @@ class SiteController extends Controller
         return $this->render('comment');
     }
 
-    public function actionProject()
+    public function actionProjectSingle()
     {
-        return $this->render('project');
+        return $this->render('project-single');
     }
 }

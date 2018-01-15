@@ -24,7 +24,7 @@ STEP PORTFOLIO ONE AREA START FORM HERE
                             <div class='single-port'>
                                 <img src='/images/portfolio/port-3/pp1.jpg' alt=''>
                                 <div class='port-hover'>
-                                    <a href='/project-single'><i class='fa fa-search'></i></a>
+                                    <a href='/site/project-single'><i class='fa fa-search'></i></a>
                                     <h5><?= Html::encode("{$project->title}") ?></h5>
                                 </div>
                                 <!-- end hover project -->

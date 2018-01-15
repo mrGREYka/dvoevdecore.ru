@@ -150,7 +150,7 @@ class SiteController extends Controller
             'totalCount' => $query->count(),
         ]);
 
-        $projects = $query->orderBy('id')
+        $projects = $query->orderBy('created desc')
             ->offset($pagination->offset)
             ->limit($pagination->limit)
             ->all();

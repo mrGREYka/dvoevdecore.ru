@@ -171,8 +171,13 @@ class SiteController extends Controller
         return $this->render('comment');
     }
 
-    public function actionProjectSingle()
+    public function actionProjectSingle($id)
     {
-        return $this->render('project-single');
+        $model = Project::findOne($id);
+        if ($model === null) {
+            throw new NotFoundHttpException;
+        } else {
+            return $this->render( 'project-single', [ 'model' => $model, ]);
+        } 
     }
 }

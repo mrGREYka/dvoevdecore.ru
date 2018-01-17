@@ -33,6 +33,7 @@ class Project extends \yii\db\ActiveRecord
             [['body'], 'string'],
             [['status'], 'integer'],
             [['title'], 'string', 'max' => 50],
+            [['iframe'], 'string'],
         ];
     }
 
@@ -47,6 +48,7 @@ class Project extends \yii\db\ActiveRecord
             'body' => 'Body',
             'created' => 'Created',
             'status' => 'Status',
+            'iframe' => 'Ссылка на YouTube',
         ];
     }
 }

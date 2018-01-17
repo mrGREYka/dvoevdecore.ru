@@ -28,6 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'body:ntext',
             'created',
+            'iframe',
             'status',
 
             ['class' => 'yii\grid\ActionColumn'],

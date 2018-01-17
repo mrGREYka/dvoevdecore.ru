@@ -5,6 +5,7 @@
 use yii\helpers\Html;
 
 $this->title = 'Детали проекта';
+$dateProject = Yii::$app->formatter->format($model->created, 'datetime');
 ?>
 
 <!-- 
@@ -43,9 +44,9 @@ PROJECTS DETIALS AREA START FORM HERE
                         <h3><?= Html::encode("{$model->title}") ?></h3>
                         <p><?= Html::encode("{$model->body}") ?></p>
                     </div>
-                    <!-- end project deatils text -->
+                    <!-- end project deatils text -->                
                     <div class="project-detials-date">
-                        <p><span>Date : </span><?= Html::encode("{$model->created}") ?></p>
+                        <p><span>Date : </span><?= Html::encode("{$dateProject}") ?></p>
                         <p><span>Client :  </span>Themforest</p>
                         <p><span>Categories :   </span>portfolio, psd, template, wordpress.</p>
                     </div>
@@ -53,6 +54,14 @@ PROJECTS DETIALS AREA START FORM HERE
                 </div>
             </div>
             <div class="big-spacer"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                            <iframe width="854" height="480" src=<?= Html::encode("{$model->iframe}") ?> frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                   
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

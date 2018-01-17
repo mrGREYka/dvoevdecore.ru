@@ -32,6 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'body:ntext',
             'created',
+            'iframe',
             'status',
         ],
     ]) ?>

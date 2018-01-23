@@ -22,6 +22,7 @@ class AppAsset extends AssetBundle
     public $css = [
         'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700',
         'https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700',
+        'http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
         'css/materialize.min.css',
         'css/font-awesome.min.css',
         'css/magnific-popup.css',
@@ -35,7 +36,7 @@ class AppAsset extends AssetBundle
         
     ];
     public $js = [
-        //'js/jquery-2.2.4.min.js',
+        //'js/jquery-2.2.4.min.js', // по умолчанию используется jquery шаблона
         'js/materialize.min.js',
         'js/imagesloaded.pkgd.min.js',
         'js/isotope.pkgd.min.js',

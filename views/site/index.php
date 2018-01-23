@@ -1,5 +1,6 @@
 <?php
 
+use app\widgets\Slider;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
@@ -7,6 +8,9 @@ use yii\captcha\Captcha;
 
 $this->title = 'Двое в декоре';
 ?>
+
+<?= Slider::widget([ 'sliders' => [ 'slider1' => '/images/slider/1.jpg', 'slider2' => '/images/slider/2.jpg', 'slider3' => '/images/slider/3.jpg', ] ]) ?>
+
 <!--content-->
 <!-- 
 ========================================

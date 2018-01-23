@@ -35,7 +35,7 @@ class AppAsset extends AssetBundle
         
     ];
     public $js = [
-        'js/jquery-2.2.4.min.js',
+        //'js/jquery-2.2.4.min.js',
         'js/materialize.min.js',
         'js/imagesloaded.pkgd.min.js',
         'js/isotope.pkgd.min.js',

@@ -20,8 +20,10 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700',
-        'https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700',
+        //'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700',
+        //'https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700',
+        'https://fonts.googleapis.com/css?family=Cormorant:400,700&amp;subset=cyrillic',
+        'https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic',
         'http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
         'css/materialize.min.css',
         'css/font-awesome.min.css',

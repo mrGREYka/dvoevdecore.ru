@@ -29,7 +29,7 @@ PROJECTS DETIALS AREA START FORM HERE
         </div>
         <div class="col-md-12">
             <div class="project-details-text">
-                <h3><?= Html::encode("{$model->title}") ?></h3>
+                <h1><?= Html::encode("{$model->title}") ?></h1>
                 <p><?= Html::encode("{$model->body}") ?></p>
             </div>
         </div>

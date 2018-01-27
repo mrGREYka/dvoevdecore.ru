@@ -143,7 +143,8 @@ class SiteController extends Controller
 
     public function actionPortfolio()
     {
-        $query = Project::find();
+        $query = Project::find()
+            ->where('status=1');
 
         $pagination = new Pagination([
             'defaultPageSize' => 9,

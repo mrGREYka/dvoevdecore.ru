@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
 
             <div class='col-sm-3'> 
-                <img src=<?= Html::encode($model->banner) ?>>
+                <img src=<?= Html::encode($model->minbanner) ?>>
             </div>
             <div class='col-sm-12'> 
                 <?= DetailView::widget([

@@ -18,8 +18,8 @@ class ProjectSearch extends Project
     public function rules()
     {
         return [
-            [['id', 'status'], 'integer'],
-            [['title', 'body', 'created'], 'safe'],
+            [['id'], 'integer'],
+            [['title'], 'safe'],
         ];
     }
 

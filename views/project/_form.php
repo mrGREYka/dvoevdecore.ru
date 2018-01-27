@@ -14,22 +14,34 @@ use yii\widgets\ActiveForm;
 
             <?php $form = ActiveForm::begin(); ?>
 
-            <div class='col-sm-4'> 
+            <div class='col-sm-6'> 
                 <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
             </div>
-            <div class='col-sm-4'> 
+            <div class='col-sm-6'> 
+                <?= $form->field($model, 'place')->textInput(['maxlength' => true]) ?>
+            </div> 
+            <div class='col-sm-6'> 
+                <?= $form->field($model, 'minbanner')->textInput(['maxlength' => true]) ?>
+            </div>
+            <div class='col-sm-6'> 
                 <?= $form->field($model, 'banner')->textInput(['maxlength' => true]) ?>
             </div>
-            <div class='col-sm-4'> 
-                <?= $form->field($model, 'place')->textInput(['maxlength' => true]) ?>
-            </div>    
+               
 
-            <div class='col-sm-12'> 
+            <div class='col-sm-9'> 
                 <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+            </div>
+
+            <div class='col-sm-3'> 
+                <?= $form->field($model, 'team')->textarea(['rows' => 6]) ?>
             </div>
 
             <div class='col-sm-4'>
                 <?= $form->field($model, 'iframe')->textInput() ?>
+            </div>
+
+            <div class='col-sm-12'>
+                <?= $form->field($model, 'status')->checkBox( [ 0, 1 ] ) ?>
             </div>
 
             <div class='col-sm-12'>

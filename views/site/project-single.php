@@ -38,31 +38,29 @@ PROJECTS DETIALS AREA START FORM HERE
                     <div class="section-title text-center">
                         <h2 class="main-section-heading">История</h2>
                     </div>
-                    <p><?= $model->body ?></p>
+                    <?= $model->body ?>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="section-pading2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center">
-                        <h2 class="main-section-heading">Команда</h2>
-                    </div>
-                    <div class="project-detials-date text-center">
-                        <p><span>Дата публикаци : </span><?= Html::encode("{$dateProject}") ?></p>
-                        <p><span>Организация и координация : </span>Dвое в Dекоре</p>
-                        <p><span>Оформление : </span>Dвое в Dекоре</p>
-                        <p><span>Фото и видео : </span>TreesCode</p>
-                        <p><span>Ведущий : </span>Александр Раев</p>
+    <?php if ( trim( $model->team ) != '' ): ?>
+        <div class="section-pading2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <h2 class="main-section-heading">Команда</h2>
+                        </div>
+                        <div class="project-detials-date text-center">
+                            <?= $model->team ?>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    <?php endif; ?>    
     <!-- 
 ========================================
 PROJECTS DETIALS AREA END FORM HERE
@@ -74,7 +72,7 @@ PROJECTS DETIALS AREA END FORM HERE
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center">
-                            <h2 class="main-section-heading">Фотогаллерея</h2>
+                            <h2 class="main-section-heading">Фотогалерея</h2>
                         </div>
                     </div>
                     <!-- end section title -->

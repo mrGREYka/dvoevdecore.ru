@@ -23,7 +23,7 @@ STEP PORTFOLIO ONE AREA START FORM HERE
                     <?php foreach ($projects as $project): ?>
                         <div class='col-sm-4'>
                             <div class='single-port'>
-                                <img src=<?= Html::encode("{$project->banner}") ?> alt=''>
+                                <img src=<?= Html::encode("{$project->minbanner}") ?> alt=''>
                                 <div class='port-hover'>
                                     <a href= <?= Html::encode("/site/project-single?id={$project->id}") ?> ><i class='fa fa-search'></i></a>
                                     <h5><?= Html::encode("{$project->title}") ?></h5>

@@ -27,6 +27,22 @@ $this->params['breadcrumbs'][] = $this->title;
                     ['class' => 'yii\grid\SerialColumn'],
                     'title',
                     'created',
+                    //'status',
+                    [
+                        'attribute'=>'status',
+                        'format'=>'raw',
+                        'value'=> function($dataProvider){
+                            return $dataProvider->status ? '<span class="text-success">Показывается</span>' : '<span class="text-danger">Не показывается</span>';
+                        }
+                    ],
+
+                    /*[
+                        'class' => 'yii\grid\CheckboxColumn', 
+                        'header'=>'status',
+                        'chekboxOptions'=>function($model, $key, $index, $column){
+                            return $model->status ? [ 'cheked'=>"cheked" ] : [ ]; 
+                        }
+                    ],*/
                     ['class' => 'yii\grid\ActionColumn'],
                 ],
             ]); ?>

@@ -29,7 +29,7 @@ class Project extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'body', 'status'], 'required'],
+            [['title', 'body'], 'required'],
             [['banner'], 'string', 'max' => 50],
             [['body'], 'string'],
             [['place'], 'string', 'max' => 50],

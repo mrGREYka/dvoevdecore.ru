@@ -83,18 +83,153 @@ PROJECTS DETIALS AREA END FORM HERE
                 <div class="step-gallery">
                     <ul>
                         <li class="single-gallery-step">
-                            <img src="/images/gallery/wms_port_sasha_dasha_1_p.jpg" alt="">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_1_p.jpg" alt="">
                             <div class="gallery-view">
-                                <a class="img-poppu" href="/images/gallery/wms_port_sasha_dasha_1.jpg">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_1.jpg">
                                     <i class="fa fa-search"></i>
                                 </a>
                             </div>
                         </li>
-                        <!-- end single gallery -->
                         <li class="single-gallery-step">
-                            <img src="/images/gallery/wms_port_sasha_dasha_2_p.jpg" alt="">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_2_p.jpg" alt="">
                             <div class="gallery-view">
-                                <a class="img-poppu" href="/images/gallery/wms_port_sasha_dasha_2.jpg">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_2.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_3_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_3.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_4_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_4.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_5_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_5.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_6_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_6.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_7_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_7.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_8_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_8.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_9_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_9.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_10_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_10.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_11_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_11.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_12_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_12.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_13_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_13.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_14_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_14.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_15_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_15.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_16_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_16.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_17_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_17.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_18_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_18.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_19_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_19.jpg">
                                     <i class="fa fa-search"></i>
                                 </a>
                             </div>

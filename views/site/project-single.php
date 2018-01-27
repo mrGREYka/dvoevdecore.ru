@@ -234,6 +234,14 @@ PROJECTS DETIALS AREA END FORM HERE
                                 </a>
                             </div>
                         </li>
+                        <li class="single-gallery-step">
+                            <img src="/images/gallery/30/wms_port_sasha_dasha_20_p.jpg" alt="">
+                            <div class="gallery-view">
+                                <a class="img-poppu" href="/images/gallery/30/wms_port_sasha_dasha_20.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
                         <!-- end single gallery -->
                     </ul>
                 </div>

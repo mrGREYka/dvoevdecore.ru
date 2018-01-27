@@ -30,6 +30,7 @@ class Project extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'body', 'status'], 'required'],
+            [['banner'], 'string', 'max' => 50],
             [['body'], 'string'],
             [['place'], 'string', 'max' => 50],
             [['status'], 'integer'],
@@ -45,11 +46,12 @@ class Project extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'body' => 'Body',
+            'title' => 'Название',
+            'banner' => 'Баннер',
+            'body' => 'Информация',
             'place' => 'Место',
-            'created' => 'Created',
-            'status' => 'Status',
+            'created' => 'Дата создания',
+            'status' => 'Статус',
             'iframe' => 'Ссылка на YouTube',
         ];
     }

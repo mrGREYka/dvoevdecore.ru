@@ -8,25 +8,37 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
+        <div class="project-form">
 
-<div class="project-form">
+        	  
 
-	  
+            <?php $form = ActiveForm::begin(); ?>
 
-    <?php $form = ActiveForm::begin(); ?>
+            <div class='col-sm-4'> 
+                <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
+            </div>
+            <div class='col-sm-4'> 
+                <?= $form->field($model, 'banner')->textInput(['maxlength' => true]) ?>
+            </div>
+            <div class='col-sm-4'> 
+                <?= $form->field($model, 'place')->textInput(['maxlength' => true]) ?>
+            </div>    
 
-    <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
+            <div class='col-sm-12'> 
+                <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+            </div>
 
-    <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+            <div class='col-sm-4'>
+                <?= $form->field($model, 'iframe')->textInput() ?>
+            </div>
 
-    <?= $form->field($model, 'status')->textInput() ?>
+            <div class='col-sm-12'>
+                <div class="form-group">
+                    <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Изменить', ['class' => $model->isNewRecord ? 'btn-mr waves-effect waves-light' : 'btn-mr waves-effect waves-light']) ?>
+                </div>
+            </div>
 
-    <?= $form->field($model, 'iframe')->textInput() ?>
+            <?php ActiveForm::end(); ?>
 
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-    </div>
-
-    <?php ActiveForm::end(); ?>
-
-</div>
+        </div>
+       

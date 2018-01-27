@@ -11,30 +11,39 @@ $this->params['breadcrumbs'][] = ['label' => 'Projects', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="project-view">
+    <div class="container">
+        <div class="row">
+            <div class='col-sm-12'>    
+                <h1><?= Html::encode($this->title) ?></h1>
+            </div>
 
-    <h1><?= Html::encode($this->title) ?></h1>
+            <div class='col-sm-3'> 
+                <img src=<?= Html::encode($model->banner) ?>>
+            </div>
+            <div class='col-sm-12'> 
+                <?= DetailView::widget([
+                    'model' => $model,
+                    'attributes' => [
+                        'id',
+                        'title',
+                    ],
+                ]) ?>
+            </div>
+            <div class='col-sm-12'> 
+                <p>
+                    <?= Html::a('Изменить', ['update', 'id' => $model->id], ['class' => 'btn-mr waves-effect waves-light']) ?>
+                            
 
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
+                    <?= Html::a('Удалить', ['delete', 'id' => $model->id], [
+                        'class' => 'btn-mr waves-effect waves-light',
+                        'data' => [
+                            'confirm' => 'Вы уверены что хотите удалить данный проект?',
+                            'method' => 'post',
+                        ],
+                    ]) ?>
+                </p>
+            <div class='col-sm-12'> 
 
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id',
-            'title',
-            'body:ntext',
-            'created',
-            'iframe',
-            'status',
-        ],
-    ]) ?>
-
+        </div>
+    </div>
 </div>

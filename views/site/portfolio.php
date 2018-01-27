@@ -21,9 +21,9 @@ STEP PORTFOLIO ONE AREA START FORM HERE
                 <h1 class="wms_align_center"><?=$this->title?></h1>
                 <div class="grid">
                     <?php foreach ($projects as $project): ?>
-                        <div class='col-sm-4 col-xs-12 grid-item cat-1 cat-4'>
+                        <div class='col-sm-4'>
                             <div class='single-port'>
-                                <img src='/images/portfolio/port-3/pp1.jpg' alt=''>
+                                <img src=<?= Html::encode("{$project->banner}") ?> alt=''>
                                 <div class='port-hover'>
                                     <a href= <?= Html::encode("/site/project-single?id={$project->id}") ?> ><i class='fa fa-search'></i></a>
                                     <h5><?= Html::encode("{$project->title}") ?></h5>

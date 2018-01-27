@@ -256,7 +256,7 @@ PROJECTS DETIALS AREA END FORM HERE
                             <h2 class="main-section-heading">Видео со свадьбы</h2>
                         </div>
                         <div class="text-center">
-                            <iframe width="100%" height="600" src=<?= Html::encode("{$model->iframe}") ?> frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe width="100%" height="600" src=<?= Html::encode("{$model->iframe}") ?> frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>

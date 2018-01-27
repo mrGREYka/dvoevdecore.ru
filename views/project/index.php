@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'title',
+            'place',
             'body:ntext',
             'created',
             'iframe',

@@ -17,7 +17,8 @@ STEP PORTFOLIO ONE AREA START FORM HERE
 -->
     <div class="stepportfilo-page-area section-pading">
         <div class="container">
-            <div class="row wms_portfolio_banner">
+            
+                <h1 class="wms_align_center"><?=$this->title?></h1>
                 <div class="grid">
                     <?php foreach ($projects as $project): ?>
                         <div class='col-sm-4 col-xs-12 grid-item cat-1 cat-4'>
@@ -32,7 +33,6 @@ STEP PORTFOLIO ONE AREA START FORM HERE
                         </div>
                     <?php endforeach; ?>
                 </div>
-            </div>
             <!-- end row -->
             <div class="row">
                 <div class="col-md-12">

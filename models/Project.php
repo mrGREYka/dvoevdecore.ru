@@ -31,6 +31,7 @@ class Project extends \yii\db\ActiveRecord
         return [
             [['title', 'body', 'status'], 'required'],
             [['body'], 'string'],
+            [['place'], 'string', 'max' => 50],
             [['status'], 'integer'],
             [['title'], 'string', 'max' => 50],
             [['iframe'], 'string'],
@@ -46,6 +47,7 @@ class Project extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Title',
             'body' => 'Body',
+            'place' => 'Место',
             'created' => 'Created',
             'status' => 'Status',
             'iframe' => 'Ссылка на YouTube',

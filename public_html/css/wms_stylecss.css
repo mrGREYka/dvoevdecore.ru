@@ -1,0 +1,69 @@
+
+				/** Typo **/
+	body h1 {text-align:center; text-transform: uppercase;}
+	body h2.main-section-heading, body h2 {text-transform: uppercase!important;}
+	
+	html body {font-family: "Montserrat", sans-serif;}
+	body h1, body h2, body h3, body h4, body h5, body h6 {font-family: "Cormorant", sans-serif;}
+	
+	 				
+				/* HEADER */
+	.mian-menu-area .col-md-2 {width: 100%;}
+	.mian-menu-area .col-md-2 .logo {text-align: center;}
+	.mian-menu-area .col-md-9 {width: 100%;}
+	.mian-menu-area.sticky	.col-md-2 {width: 16.66666667%;}
+	.mian-menu-area.sticky	.col-md-9 {width: 75%;}					
+
+			
+				/** Misc **/
+	/*.wms_color_blue {color: #79787d;}
+	.wms_color_orange {color: #ff9000;}
+	.wms_background_blue {background: #79787d;}
+	.wms_background_orange {background: #ff9000;}
+	.wms_background_dark {background: #353535;}
+	.wms_strong {font-weight: bold;}
+	.wms_italic {font-style: italic;}
+	.wms_sign_text {text-align: center; font-weight: bold;}
+	.wms_align_center {text-align: center;}
+	.wms_no_margin {margin: 0;}
+	.wms_no_padding {padding: 0;}
+	.wms_mobile_only {display: none;}*/
+	
+	div.wms_divider_1 {    margin: 30px 0;
+    height: 100px;
+    background: url(https://images.vexels.com/media/users/3/130377/isolated/preview/aa931ad53238d46de795ee940ff9bbcc-floral-curves-decorative-divider-by-vexels.png) no-repeat;
+    background-position: center center;
+    }
+	
+	.section-pading2 div.wms_divider_1 {transform: rotate(180deg);}
+				
+				
+		/** Portfolio Archive Grid **/
+	.stepportfilo-page-area div.single-port {-webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; -webkit-box-shadow: 0px 0px 2px 2px rgba(47,173,185,1); -moz-box-shadow: 0px 0px 2px 2px rgba(47,173,185,1); box-shadow: 0px 0px 2px 2px rgba(47,173,185,1);}
+	div.stepproject-area .container {text-align: center;}							
+
+
+				/** Portfolio **/				
+	div.wms_project_wrapper .row.wms_project_banner {margin-left: 0; margin-right: 0; overflow: hidden; position: relative;}
+	div.wms_project_wrapper .row.wms_project_banner h1 {font-size: 40px;}
+	div.wms_project_wrapper .row.wms_project_banner .col-md-12 {padding: 0;}
+	div.wms_project_wrapper .row.wms_project_banner .col-md-12:last-of-type {position: absolute; z-index: 77; width: 400px; right: 0; height: 100%;  background: rgb(137, 138, 138); background: rgba(0, 0, 0, 0.5); -webkit-box-shadow: 2px 0px 2px 2px rgba(255,255,255,1);
+-moz-box-shadow: 2px 0px 2px 2px rgba(255,255,255,1);
+box-shadow: 2px 0px 2px 2px rgba(255,255,255,1);}
+	div.wms_project_wrapper .row.wms_project_banner .single-project-detilas {text-align: center;}
+	div.wms_project_wrapper .row.wms_project_banner .single-project-detilas img {width: 100%;}
+	
+	div.wms_project_wrapper .row.wms_project_banner .project-details-text {top: 50%; position: relative; text-align: center; margin-top: -20px;}
+	div.wms_project_wrapper .row.wms_project_banner .project-details-text h3, div.wms_project_wrapper .row.wms_project_banner .project-details-text h1 {text-transform: uppercase;}
+	div.wms_project_wrapper .project-details-text h1, div.wms_project_wrapper .project-details-text p {color: white;}	
+	div.wms_project_wrapper .project-detials-date p span {font-weight: bold;}
+	div.wms_project_wrapper .wms_divider_1 + div.section-pading2 {padding-top: 0;}
+	
+		
+	
+	
+				/** Layout **/	
+	div.section-pading2 {padding: 45px 0;}
+	div.section-pading2 + div.section-pading2 {padding-top: 0;}
+	.section-title, .main-section-heading {margin-bottom: 30px;}
+	    

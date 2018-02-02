@@ -16,16 +16,31 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class='col-sm-12'>    
                 <h1><?= Html::encode($this->title) ?></h1>
             </div>
-
-            <div class='col-sm-3'> 
-                <img src=<?= Html::encode($model->minbanner) ?>>
-            </div>
+            <?php 
+                $image = $model->getImage();
+                $gallery = $model->getImages();
+            ?>
+            <?php 
+        
+       // foreach($images as $img){ var_dump( $img ); echo '</br>'; echo '</br>';} ?>
             <div class='col-sm-12'> 
                 <?= DetailView::widget([
                     'model' => $model,
                     'attributes' => [
                         'id',
                         'title',
+                        [
+                            'attribute' => 'image',
+                            'value' => $model->getImageHTML( ),
+                            'format' => 'html',       
+                        ],
+                        [
+                            'attribute' => 'images',
+                            'value' => $model->getGalleryHTML( ),
+
+                            //"<img src='/images/store/{$image->filePath}'>",
+                            'format' => 'html',       
+                        ],
                     ],
                 ]) ?>
             </div>

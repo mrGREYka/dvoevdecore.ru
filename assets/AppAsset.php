@@ -48,7 +48,7 @@ class AppAsset extends AssetBundle
         'js/lightbox.min.js',
         'js/jquery.magnific-popup.min.js',
         'js/waypoints.min.js',
-        'js/datepicker.min.js',
+        //'js/datepicker.min.js',
         'js/swiper.min.js',
         'js/jquery.appear.js',
         'js/jquery.countdown.min.js',

@@ -8,6 +8,7 @@ use app\models\ProjectSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * ProjectController implements the CRUD actions for Project model.
@@ -24,6 +25,15 @@ class ProjectController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
+                ],
+            ],
+            'access' => [
+                'class' => \yii\filters\AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
                 ],
             ],
         ];
@@ -85,6 +95,11 @@ class ProjectController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->image = UploadedFile::getInstance ( $model, 'image' );
+            if ( $model->image) {
+                $model->upload(); 
+            }
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
@@ -121,4 +136,5 @@ class ProjectController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
 }

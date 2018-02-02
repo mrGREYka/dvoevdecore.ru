@@ -15,12 +15,24 @@ use Yii;
  */
 class Project extends \yii\db\ActiveRecord
 {
+    public $image;
+    public $gallery;
+    public $folderImg = 'images/store/';
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
         return 'project';
+    }
+
+    public function behaviors()
+    {
+        return [
+            'image' => [
+                'class' => 'rico\yii2images\behaviors\ImageBehave',
+            ]
+        ];
     }
 
     /**
@@ -38,6 +50,8 @@ class Project extends \yii\db\ActiveRecord
             [['status'], 'integer'],
             [['title'], 'string', 'max' => 50],
             [['iframe'], 'string'],
+            [['image'], 'file', 'extensions' => 'png, jpg'],
+            [['gallery'], 'file', 'extensions' => 'png, jpg', 'maxFiles' => 8 ],
         ];
     }
 
@@ -49,8 +63,10 @@ class Project extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'title' => 'Название',
+            'image' => 'Фото',
             'banner' => 'Баннер',
             'minbanner' => 'Миниатюра',
+            'images' => 'Галерея',
             'body' => 'Информация',
             'team' => 'Команда',
             'place' => 'Место',
@@ -58,5 +74,26 @@ class Project extends \yii\db\ActiveRecord
             'status' => 'Статус',
             'iframe' => 'Ссылка на YouTube',
         ];
+    }
+    public function upload(){
+        if ($this->validate()){
+            $path = $this->folderImg . $this->image->BaseName . '.' .$this->image->extension;
+            $this->image->saveAs($path);
+            $this->attachImage($path);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function getImageHTML( ){
+        $image = $this->getImage( );
+        $src_img = $this->folderImg . $image->filePath;
+        return \Yii::$app->view->render( '_galleryItem', [ 'src_img' => $src_img,  ] );
+    }
+
+    public function getGalleryHTML( ){
+        $gallery = $this->getImages( );
+        return \Yii::$app->view->render( '_gallery', [ 'gallery' => $gallery, 'folderImg' => $this->folderImg, ] );
     }
 }

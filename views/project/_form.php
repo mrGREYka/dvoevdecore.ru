@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use mihaildev\ckeditor\CKEditor;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Project */
@@ -10,9 +11,7 @@ use yii\widgets\ActiveForm;
 
         <div class="project-form">
 
-        	  
-
-            <?php $form = ActiveForm::begin(); ?>
+            <?php $form = ActiveForm::begin( ['options' => ['enctype' => 'multipart/form-data']] ); ?>
 
             <div class='col-sm-6'> 
                 <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
@@ -20,6 +19,14 @@ use yii\widgets\ActiveForm;
             <div class='col-sm-6'> 
                 <?= $form->field($model, 'place')->textInput(['maxlength' => true]) ?>
             </div> 
+
+            <div class='col-sm-6'> 
+                <?= $form->field($model, 'image')->fileInput() ?>
+            </div>
+            <div class='col-sm-6'> 
+                
+            </div>
+
             <div class='col-sm-6'> 
                 <?= $form->field($model, 'minbanner')->textInput(['maxlength' => true]) ?>
             </div>
@@ -28,12 +35,24 @@ use yii\widgets\ActiveForm;
             </div>
                
 
-            <div class='col-sm-9'> 
-                <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+            <div class='col-sm-12'> 
+                <?= $form->field($model, 'body')->widget(CKEditor::className(),[
+                        'editorOptions' => [
+                            'preset' => 'standart', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
+                            'inline' => false, //по умолчанию false
+                        ],
+                    ]); 
+                ?>
             </div>
 
-            <div class='col-sm-3'> 
-                <?= $form->field($model, 'team')->textarea(['rows' => 6]) ?>
+            <div class='col-sm-12'> 
+                <?= $form->field($model, 'team')->widget(CKEditor::className(),[
+                        'editorOptions' => [
+                            'preset' => 'full', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
+                            'inline' => false, //по умолчанию false
+                        ],
+                    ]); 
+                ?>
             </div>
 
             <div class='col-sm-4'>

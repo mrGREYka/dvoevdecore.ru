@@ -111,6 +111,19 @@ AppAsset::register($this);
                                         ['label' => 'Портфолио', 'url' => ['/site/portfolio']],
                                         ['label' => 'Отзывы', 'url' => ['/site/comment']],
                                         ['label' => 'Контакты', 'url' => ['/site/contact']],
+                                        Yii::$app->user->isGuest ? (
+                                            ['label' => 'Войти', 'url' => ['/site/login']]
+                                        ) : (
+                                            '<li><a href="/project">Админка</a></li>
+                                            <li>'
+                                            . Html::beginForm(['/site/logout'], 'post')
+                                            . Html::submitButton(
+                                                'Выйти (' . Yii::$app->user->identity->username . ')',
+                                                ['class' => 'btn-mr waves-effect waves-light']
+                                            )
+                                            . Html::endForm()
+                                            . '</li>'
+                                        )
                                     ],
                                 ]);
                             ?>
@@ -147,6 +160,20 @@ AppAsset::register($this);
                         ['label' => 'Портфолио', 'url' => ['/site/portfolio']],
                         ['label' => 'Отзывы', 'url' => ['/site/comment']],
                         ['label' => 'Контакты', 'url' => ['/site/contact']],
+                        
+                        Yii::$app->user->isGuest ? (
+                            ['label' => 'Войти', 'url' => ['/site/login']]
+                        ) : (
+                            '<li><a href="/project">Админка</a></li>
+                            <li>'
+                            . Html::beginForm(['/site/logout'], 'post')
+                            . Html::submitButton(
+                                    'Выйти (' . Yii::$app->user->identity->username . ')',
+                                    ['class' => 'btn-mr waves-effect waves-light']
+                                )
+                            . Html::endForm()
+                            . '</li>'
+                        )
                     ],
                 ]);
             ?>

@@ -30,3 +30,6 @@ tests/_output/*
 tests/_support/_generated
 
 .wms_stylecss
+
+
+config/db.php

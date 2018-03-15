@@ -7,6 +7,80 @@ use yii\helpers\Html;
 $this->title = 'Наши услуги';
 ?>
 
+<!-- 
+========================================
+STEP SERVICES AREA START FORM HERE
+========================================
+-->
+
+    <div class="step-services section-pading services-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h1 class="main-section-heading">НАШИ УСЛУГИ</h1>
+                    </div>
+                </div>
+                <!-- end section title -->
+            </div>
+            <div class="row">
+                <div class="col-md-4 mp-0 mbt-30">
+                    <div class="step-single-services waves-effect waves-light-1">
+                        <i class="fa fa-snowflake-o"></i>
+                        <h2 class="services-title3">Концепция</h2>
+                        <p>Разработка общей концепции мероприятия.</p>
+                    </div>
+                </div>
+                <!-- end single services -->
+                <div class="col-md-4 mp-0 mbt-30">
+                    <div class="step-single-services waves-effect waves-light-1 hilight">
+                        <i class="fa fa-users"></i>
+                        <h2 class="services-title3">Дизайн</h2>
+                        <p>Дизайн, разработка макетов/эскизов.</p>
+                    </div>
+                </div>
+                <!-- end single services -->
+                <div class="col-md-4 mp-0 mbt-30">
+                    <div class="step-single-services waves-effect waves-light-1">
+                        <i class="fa fa-lightbulb-o"></i>
+                        <h2 class="services-title3">Флористика</h2>
+                        <p>Флористика и декор: фотосессия, утро невесты, выездная регистрация, банкетный зал, фотозона, зона «welcome».</p>
+                    </div>
+                </div>
+                <!-- end single services -->
+                <div class="col-md-4 mp-0 mbt-30">
+                    <div class="step-single-services waves-effect waves-light-1">
+                        <i class="fa fa-universal-access"></i>
+                        <h2 class="services-title3">Полиграфия</h2>
+                        <p>Свадебная полиграфия.</p>
+                    </div>
+                </div>
+                <!-- end single services -->
+                <div class="col-md-4 mp-0 mbt-30">
+                    <div class="step-single-services waves-effect waves-light-1">
+                        <i class="fa fa-laptop"></i>
+                        <h2 class="services-title3">Аксессуары</h2>
+                        <p>Свадебные аксессуары.</p>
+                    </div>
+                </div>
+                <!-- end single services -->
+                <div class="col-md-4 mp-0">
+                    <div class="step-single-services waves-effect waves-light-1">
+                        <i class="fa fa-briefcase"></i>
+                        <h2 class="services-title3">Декор</h2>
+                        <p>Декор сладких столов.</p>
+                    </div>
+                </div>
+                <!-- end single services -->
+            </div>
+        </div>
+    </div>
+    <!-- 
+========================================
+STEP SERVICES AREA END FORM HERE
+========================================
+-->
+
  <!-- 
 ========================================
 STEP OUR SERVICES START FORM HERE 

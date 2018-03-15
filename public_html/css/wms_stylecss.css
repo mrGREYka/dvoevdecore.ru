@@ -66,4 +66,14 @@ box-shadow: 2px 0px 2px 2px rgba(255,255,255,1);}
 	div.section-pading2 {padding: 45px 0;}
 	div.section-pading2 + div.section-pading2 {padding-top: 0;}
 	.section-title, .main-section-heading {margin-bottom: 30px;}
+
+	/** Adminka **/
+	.gallery-adminka i.fa.fa-eye{ margin-left: -40px; color: red;
+	    	}
+	.gallery-adminka i.fa.fa-trash{ margin-left: -0px; 
+	    	}
+
+	.mian-menu-area {
+    	background: #ffffff82 none repeat scroll 0 0;
+	}    	  
 	    

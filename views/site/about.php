@@ -18,10 +18,9 @@ $this->title = 'О нас';
             <div class="row">
                 <div class="col-md-6 stb-30 mbt-30">
                     <div class="whoare-title">
-                        <h2 class="main-section-heading"><span class="sec-bar">Who</span> We Are?</h2>
-                        <p class="strng">The release of Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing software.</p>
-                        <p class="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod fugiat tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolore consequat. Duis aute irure dolor in henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                        <a href="#!" class="btn-mr waves-effect waves-light">OUR SERVICES</a>
+                        <h2 class="main-section-heading">О Нас</h2>
+                        <p class="normal">Привет! Мы Вика и Маруся – основатели команды «Dвое в Dекоре». Уже более 4х лет мы занимаемся декором свадеб и частных мероприятий. За это время мы поработали в разных студиях декора и агентствах, многому научились, нашли свои сильные стороны и своё призвание!</p>
+                        <a href="/site/service" class="btn-mr waves-effect waves-light">Наши услуги</a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -42,6 +41,27 @@ $this->title = 'О нас';
 
     <!-- 
 ========================================
+WELCOME TO STEPS AREA START FORM HERE
+========================================
+-->
+    <div class="welcomestep section-pading">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2 class="section-heading">ЧТО МЫ ДЕЛАЕМ?</h2>
+                        <div class="middle-con">
+                            <p>Мы оформляем частные мероприятия, но основное направление - свадьбы. Наша команда занимается: флористическим оформлением, объемными декорациями, текстильным декором, оформлением сладкого стола, фотозон, полиграфией и декором утра невесты.</p>
+                        </div>
+                        <a href="/site/service" class="btn-mr waves-effect waves-light">Наши услуги</a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!-- 
+========================================
 STEP SERVICES AREA START FORM HERE
 ========================================
 -->
@@ -51,9 +71,9 @@ STEP SERVICES AREA START FORM HERE
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title text-center">
-                        <h2 class="main-section-heading">Why <span class="sec-bar">Choo</span>se Us</h2>
+                        <h2 class="main-section-heading">ПОЧЕМУ ОБРАЩАЮТСЯ К НАМ?</h2>
                         <div class="middle-con">
-                            <p>The release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>Мы не гонимся за трендами и модой, но всегда в курсе всех новинок, и используем их в наших проектах, если это уместно. Нам нравится создавать душевную атмосферу уюта и тепла. Наш конёк – рустик и бохо, но мы с огромной любовью и удовольствием работаем со всеми стилями. Особенно нам нравятся сложные идеи и задумки, к которым нужно найти лаконичные решения.</p>
                         </div>
                     </div>
                 </div>
@@ -116,6 +136,21 @@ STEP SERVICES AREA START FORM HERE
 STEP SERVICES AREA END FORM HERE
 ========================================
 -->
+
+<div class="welcomestep section-pading">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2 class="section-heading2">ДЛЯ КОГО МЫ РАБОТАЕМ?</h2>
+                        <div class="middle-con">
+                            <p>Для тех, кто готов доверить нам такое важное событие, и хочет получить превосходный результат, без нервов и проблем. Нам под силу любые масштабы, но мы не берём мероприятия с численностью гостей выше 100 человек и отдаём предпочтение уютным свадьбам до 70 гостей.  Самое главное для нас – создать атмосферу и красоту, которую Вы и гости будете с теплом вспоминать ещё много лет.</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div> 
 
     <!-- 
 ========================================

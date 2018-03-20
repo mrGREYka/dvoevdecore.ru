@@ -75,4 +75,13 @@ return array (
       '@mihaildev/ckeditor' => $vendorDir . '/mihaildev/yii2-ckeditor',
     ),
   ),
+  'himiklab/yii2-recaptcha-widget' => 
+  array (
+    'name' => 'himiklab/yii2-recaptcha-widget',
+    'version' => '1.1.2.0',
+    'alias' => 
+    array (
+      '@himiklab/yii2/recaptcha' => $vendorDir . '/himiklab/yii2-recaptcha-widget',
+    ),
+  ),
 );

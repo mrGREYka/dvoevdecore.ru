@@ -26,6 +26,12 @@ $config = [
         ],
     ],
     'components' => [
+        'reCaptcha' => [
+            'name' => 'reCaptcha',
+            'class' => 'himiklab\yii2\recaptcha\ReCaptcha',
+            'siteKey' => '6LeQl00UAAAAAHZDmCcTZuvviV4xUuPcU29D-69d',
+            'secret' => '6LeQl00UAAAAABbPqB1eaY5uDyg-_TfXl-NagDVV',
+        ],
         'assetManager' => [
             'bundles' => [
                 'yii\web\JqueryAsset' => [

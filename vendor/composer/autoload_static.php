@@ -39,6 +39,10 @@ class ComposerStaticInit64ef05c9fe4d23466906586e3f2963af
         array (
             'mihaildev\\ckeditor\\' => 19,
         ),
+        'h' => 
+        array (
+            'himiklab\\yii2\\recaptcha\\' => 24,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -128,6 +132,10 @@ class ComposerStaticInit64ef05c9fe4d23466906586e3f2963af
         'mihaildev\\ckeditor\\' => 
         array (
             0 => __DIR__ . '/..' . '/mihaildev/yii2-ckeditor',
+        ),
+        'himiklab\\yii2\\recaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/himiklab/yii2-recaptcha-widget',
         ),
         'cebe\\markdown\\' => 
         array (

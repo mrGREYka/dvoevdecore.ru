@@ -103,9 +103,10 @@ GET IN TOUCH TWO AREA START FORM HERE
 
                     <?= $form->field($model, 'body')->textarea(['rows' => 6, 'placeholder' => 'Сообщение']) ?>
 
-                    <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-                        'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-9">{input}</div></div>',
-                    ]) ?>
+                    <?= $form->field($model, 'reCaptcha')->widget(
+                        \himiklab\yii2\recaptcha\ReCaptcha::className(),
+                        ['siteKey' => '6LeQl00UAAAAAHZDmCcTZuvviV4xUuPcU29D-69d']
+                    ) ?>
 
                     <div class="form-group">
                         <?= Html::submitButton('Отправить', ['class' => 'btn-mr waves-effect waves-light', 'name' => 'contact-button']) ?>

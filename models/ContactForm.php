@@ -15,6 +15,7 @@ class ContactForm extends Model
     public $subject;
     public $body;
     public $verifyCode;
+    public $reCaptcha;
 
 
     /**
@@ -31,7 +32,10 @@ class ContactForm extends Model
             // email has to be a valid email address
             ['email', 'email', 'message'=>'Некорректный e-mail адрес.' ],
             // verifyCode needs to be entered correctly
-            ['verifyCode', 'captcha', 'message'=>'Неправильно указана каптча.'],
+            
+            //['verifyCode', 'captcha', 'message'=>'Неправильно указана каптча.'],
+            [['reCaptcha'], \himiklab\yii2\recaptcha\ReCaptchaValidator::className(), 'secret' => '6LeQl00UAAAAABbPqB1eaY5uDyg-_TfXl-NagDVV', 'uncheckedMessage' => 'Please confirm that you are not a bot.'],
+            
         ];
     }
 

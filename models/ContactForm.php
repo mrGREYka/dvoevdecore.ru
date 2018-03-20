@@ -34,7 +34,7 @@ class ContactForm extends Model
             // verifyCode needs to be entered correctly
             
             //['verifyCode', 'captcha', 'message'=>'Неправильно указана каптча.'],
-            [['reCaptcha'], \himiklab\yii2\recaptcha\ReCaptchaValidator::className(), 'secret' => '6LeQl00UAAAAABbPqB1eaY5uDyg-_TfXl-NagDVV', 'uncheckedMessage' => 'Please confirm that you are not a bot.'],
+            [['reCaptcha'], \himiklab\yii2\recaptcha\ReCaptchaValidator::className(), 'secret' => '6LeQl00UAAAAABbPqB1eaY5uDyg-_TfXl-NagDVV', 'uncheckedMessage' => 'Пожалуйста подтвердите что Вы не робот.'],
             
         ];
     }

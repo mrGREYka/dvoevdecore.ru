@@ -35,7 +35,7 @@ AppAsset::register($this);
     STEP PRELOADER
     ========================================
       -->
-    <div class="step-preloader-rapper">
+    <!--<div class="step-preloader-rapper">
         <div class="preloder-table">
             <div class="preloder-cell">
                 <div class="preloder-logo mtb-30 text-center">
@@ -46,7 +46,7 @@ AppAsset::register($this);
                 </div>
             </div>
         </div>
-    </div> 
+    </div> --> 
     <!-- 
     ========================================
     STEP PRELOADER
@@ -88,15 +88,15 @@ AppAsset::register($this);
         <div class="mian-menu-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2 col-sm-2 col-xs-4">
+                    <!--<div class="col-md-2 col-sm-2 col-xs-4">
                         <div class="logo">
                             <a href="/">
                                 <img src="/images/logo/logo.png" alt="">
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- end logo -->
-                    <div class="col-md-9 col-sm-9 col-xs-4">
+                    <div class="col-md-12 col-sm-12 col-xs-6">
                         <div class="mobile-menu">
                             <a href="#" class="mobile-menu-step">
                                 <img src="/images/menu.png" alt="">
@@ -114,15 +114,7 @@ AppAsset::register($this);
                                         Yii::$app->user->isGuest ? (
                                             ['label' => 'Войти', 'url' => ['/site/login']]
                                         ) : (
-                                            '<li><a href="/project">Админка</a></li>
-                                            <li>'
-                                            . Html::beginForm(['/site/logout'], 'post')
-                                            . Html::submitButton(
-                                                'Выйти (' . Yii::$app->user->identity->username . ')',
-                                                ['class' => 'btn-mr waves-effect waves-light']
-                                            )
-                                            . Html::endForm()
-                                            . '</li>'
+                                            '<li><a href="/project">Админка</a></li><li><a href="/site/logout">Выйти</a></li>'
                                         )
                                     ],
                                 ]);
@@ -164,15 +156,7 @@ AppAsset::register($this);
                         Yii::$app->user->isGuest ? (
                             ['label' => 'Войти', 'url' => ['/site/login']]
                         ) : (
-                            '<li><a href="/project">Админка</a></li>
-                            <li>'
-                            . Html::beginForm(['/site/logout'], 'post')
-                            . Html::submitButton(
-                                    'Выйти (' . Yii::$app->user->identity->username . ')',
-                                    ['class' => 'btn-mr waves-effect waves-light']
-                                )
-                            . Html::endForm()
-                            . '</li>'
+                            '<li><a href="/project">Админка</a></li><li><a href="/site/logout">Выйти</a></li>'
                         )
                     ],
                 ]);

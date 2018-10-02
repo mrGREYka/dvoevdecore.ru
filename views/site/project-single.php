@@ -79,7 +79,28 @@ PROJECTS DETIALS AREA END FORM HERE
                 </div>
             </div>
             <!-- end container -->
+
             <div class="container">
+                <div class='step-gallery'>
+                    <ul>
+                        <?php 
+                        if ( $model->gallery ) {   
+                            foreach ($model->gallery->getImages( ) as $galleryItem): 
+                            $src_img = $model->folderImg . $galleryItem->filePath; ?>
+                            <li class='single-gallery-step'>
+                                <img src=<?= '/'. Html::encode("{$src_img}") ?> >
+                                <div class='gallery-view gallery-adminka'>
+                                    <a class='img-poppu' href=<?= '/'. Html::encode("{$src_img}") ?> >
+                                        <i class='fa fa-search'></i>
+                                    </a>
+                                </div>
+                            </li>
+                        <?php endforeach; } ?>
+                    </ul>
+                </div>
+            </div>    
+
+            <!--<div class="container">
                 <div class="step-gallery">
                     <ul>
                         <li class="single-gallery-step">
@@ -242,10 +263,9 @@ PROJECTS DETIALS AREA END FORM HERE
                                 </a>
                             </div>
                         </li>
-                        <!-- end single gallery -->
                     </ul>
                 </div>
-            </div>    
+            </div> -->   
             <!-- end gallery  -->
         </div>
 

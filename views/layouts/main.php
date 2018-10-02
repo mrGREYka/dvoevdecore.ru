@@ -114,7 +114,14 @@ AppAsset::register($this);
                                         Yii::$app->user->isGuest ? (
                                             ['label' => 'Войти', 'url' => ['/site/login']]
                                         ) : (
-                                            '<li><a href="/project">Админка</a></li><li><a href="/site/logout">Выйти</a></li>'
+                                            '<li class="has-child">
+                                                <a href="/#">Админка</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="/project">Управление проекты</a></li>
+                                                    <li><a href="/gallery">Управление галлереями</a></li>
+                                                    <li><a href="/site/logout">Выйти</a></li>
+                                                </ul>
+                                            </li>'
                                         )
                                     ],
                                 ]);
@@ -156,7 +163,10 @@ AppAsset::register($this);
                         Yii::$app->user->isGuest ? (
                             ['label' => 'Войти', 'url' => ['/site/login']]
                         ) : (
-                            '<li><a href="/project">Админка</a></li><li><a href="/site/logout">Выйти</a></li>'
+                            '<li><a href="/project">Управление проекты</a></li>
+                            <li><a href="/gallery">Управление галлереями</a></li>
+                            <li><a href="/site/logout">Выйти</a></li>'
+                            
                         )
                     ],
                 ]);

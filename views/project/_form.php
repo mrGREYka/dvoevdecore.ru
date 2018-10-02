@@ -25,6 +25,11 @@ use mihaildev\ckeditor\CKEditor;
             </div>
             <div class='col-sm-6'> 
                 
+                <?= $form->field($model, 'gallery_id')->
+                dropDownList( \yii\helpers\ArrayHelper::map( \app\models\Gallery::find( )->all( ), 'id', 'title' )
+                    ,[ 'prompt'=>'Без галлереи...',
+                    ] 
+                ) ?>
             </div>
 
             <div class='col-sm-6'> 

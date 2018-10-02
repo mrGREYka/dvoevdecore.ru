@@ -16,7 +16,7 @@ use Yii;
 class Project extends \yii\db\ActiveRecord
 {
     public $image;
-    public $gallery;
+   // public $gallery;
     public $folderImg = 'images/store/';
     /**
      * @inheritdoc
@@ -46,6 +46,7 @@ class Project extends \yii\db\ActiveRecord
             [['minbanner'], 'string', 'max' => 50],
             [['body'], 'string'],
             [['team'], 'string'],
+            [['gallery_id'], 'integer'],
             [['place'], 'string', 'max' => 50],
             [['status'], 'integer'],
             [['title'], 'string', 'max' => 50],
@@ -64,6 +65,7 @@ class Project extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Название',
             'image' => 'Фото',
+            'gallery_id' => 'Галлерея',
             'banner' => 'Баннер',
             'minbanner' => 'Миниатюра',
             'images' => 'Галерея',
@@ -95,5 +97,10 @@ class Project extends \yii\db\ActiveRecord
     public function getGalleryHTML( ){
         $gallery = $this->getImages( );
         return \Yii::$app->view->render( '_gallery', [ 'gallery' => $gallery, 'folderImg' => $this->folderImg, ] );
+    }
+
+    public function getGallery( )
+    {
+        return $this->hasOne( Gallery::className( ), [ 'id' => 'gallery_id' ] );
     }
 }

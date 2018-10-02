@@ -28,6 +28,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     'model' => $model,
                     'attributes' => [
                         'id',
+                        //'gallery_id',
+                        [
+                            'attribute' => 'gallery_id',
+                            'value' => $model->gallery->title,
+
+                            
+                        ],
                         'title',
                         [
                             'attribute' => 'image',

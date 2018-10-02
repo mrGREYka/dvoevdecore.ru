@@ -32,6 +32,13 @@ $this->params['breadcrumbs'][] = $this->title;
                             return $dataProvider->getImageHTML( );
                         }
                     ],
+                    [
+                        'attribute' => 'gallery_id',
+                        'value' => function($data) {
+                            return $data->gallery->title;
+
+                        }
+                    ],
                     'title',
                     'created',
                     //'status',

@@ -3,17 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Gallery;
-use app\models\GallerySerch;
+use app\models\book;
+use app\models\bookSerch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\web\UploadedFile;
 
 /**
- * GalleryController implements the CRUD actions for Gallery model.
+ * BookController implements the CRUD actions for book model.
  */
-class GalleryController extends Controller
+class BookController extends Controller
 {
     /**
      * @inheritdoc
@@ -36,16 +35,17 @@ class GalleryController extends Controller
                     ],
                 ],
             ],
+
         ];
     }
 
     /**
-     * Lists all Gallery models.
+     * Lists all book models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new GallerySerch();
+        $searchModel = new bookSerch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -55,7 +55,7 @@ class GalleryController extends Controller
     }
 
     /**
-     * Displays a single Gallery model.
+     * Displays a single book model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -68,23 +68,16 @@ class GalleryController extends Controller
     }
 
     /**
-     * Creates a new Gallery model.
+     * Creates a new book model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Gallery();
+        $model = new book();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            /*return $this->redirect(['view', 'id' => $model->id]);*/
-            $searchModel = new GallerySerch();
-            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-            return $this->render('index', [
-                'searchModel' => $searchModel,
-                'dataProvider' => $dataProvider,
-            ]);
+            return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [
@@ -93,7 +86,7 @@ class GalleryController extends Controller
     }
 
     /**
-     * Updates an existing Gallery model.
+     * Updates an existing book model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -104,14 +97,7 @@ class GalleryController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model->image = UploadedFile::getInstances ( $model, 'image' );
-            if ( $model->image) {
-                $model->upload(); 
-            }
-            //return $this->redirect(['view', 'id' => $model->id]);
-            return $this->render( 'update', [
-                'model' => $model,
-            ] );
+            return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('update', [
@@ -120,7 +106,7 @@ class GalleryController extends Controller
     }
 
     /**
-     * Deletes an existing Gallery model.
+     * Deletes an existing book model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -134,42 +120,18 @@ class GalleryController extends Controller
     }
 
     /**
-     * Finds the Gallery model based on its primary key value.
+     * Finds the book model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Gallery the loaded model
+     * @return book the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Gallery::findOne($id)) !== null) {
+        if (($model = book::findOne($id)) !== null) {
             return $model;
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
-    }
-
-    public function actionImagedel( )
-    {
-        $id = Yii::$app->request->get('id');
-        $model = $this->findModel($id);        
-        $idImage = Yii::$app->request->get('idimage');
-
-        $imgs = $model->getImages( );
-        foreach ($imgs as $img):
-            $imgID = $img->getPrimaryKey();
-            if ( $imgID == $idImage ) {
-                $model->removeImage( $img ); 
-                break;
-            } 
-        endforeach;    
-        
-
-        return $this->redirect( [ 'update', 'id' => $id, ] );
-
-        /*return $this->render( '_form', [
-            'model' => $model,
-        ] );*/
-
     }
 }

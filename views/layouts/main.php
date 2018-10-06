@@ -117,8 +117,9 @@ AppAsset::register($this);
                                             '<li class="has-child">
                                                 <a href="/#">Админка</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="/project">Управление проекты</a></li>
-                                                    <li><a href="/gallery">Управление галлереями</a></li>
+                                                    <li><a href="/book">Издания</a></li>
+                                                    <li><a href="/project">Проекты</a></li>
+                                                    <li><a href="/gallery">Галлереи</a></li>
                                                     <li><a href="/site/logout">Выйти</a></li>
                                                 </ul>
                                             </li>'

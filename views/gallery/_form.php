@@ -19,16 +19,18 @@ use yii\widgets\ActiveForm;
         <div class='col-sm-6'> 
             <?= $form->field($model, 'image[]')->fileInput(['multiple' => true]) ?>
         </div>
+        <div class='col-sm-12'> 
+            <div class="form-group">
+                <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
+            </div>
+        </div>
+
+        <div class="col-md-12"><div class="section-title text-center"><h2 class="main-section-heading">Добавленные фотографии</h2></div></div>
 
         <div class='col-sm-12'> 
             <?= $model->getGalleryHTML( ); ?>
         </div>    
 
-        <div class='col-sm-12'> 
-            <div class="form-group">
-                <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
-            </div>
-        </div>
     </div>
 
     <?php ActiveForm::end(); ?>

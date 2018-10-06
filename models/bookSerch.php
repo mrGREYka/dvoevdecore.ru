@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\book;
+use app\models\Book;
 
 /**
  * bookSerch represents the model behind the search form of `app\models\book`.
  */
-class bookSerch extends book
+class bookSerch extends Book
 {
     /**
      * @inheritdoc

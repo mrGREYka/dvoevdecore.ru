@@ -3,7 +3,7 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\book;
+use app\models\Book;
 use app\models\bookSerch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
